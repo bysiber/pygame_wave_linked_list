@@ -24,7 +24,6 @@ class Frame():
             self._frameUpdate(node.data,node.prev)
             node.data[0] =v[0] -math.sin(self.counter*3)*self.counter*self.counter*self.counter/4555
             node.data[1] =v[1]-math.cos(self.counter*3)*self.counter*self.counter*self.counter/4555
-            print(node.data[1])
             self.counter += 0.3
             if self.counter % 2 == 0:
                 a = 1
